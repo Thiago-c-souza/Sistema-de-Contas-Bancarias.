@@ -115,4 +115,4 @@ Se quiser contribuir para o projeto:
 
 ---
 
-📌 **Criado por Thiago CAixeta** 🚀
+📌 **Criado por Thiago Caixeta de Souza** 🚀
