@@ -1,21 +1,26 @@
 # 🏦 Sistema de Contas Bancárias
 
-Processo em andamento.
+📌 **Status Atual:** Em desenvolvimento
+📌 **Próximos passos:** Implementação da persistência de dados com JSON
 
-Um **Sistema de Contas Bancárias** simples e funcional desenvolvido em **Python**. O sistema permite criar contas, realizar depósitos, saques e consultar saldo, armazenando os dados de forma persistente em um arquivo JSON.
+Um **Sistema de Contas Bancárias** simples e funcional desenvolvido em **Python**. O sistema atualmente permite criar contas, realizar depósitos, saques e consultar saldo. O próximo passo será implementar a **persistência de dados em JSON**, garantindo que as contas sejam salvas e carregadas automaticamente.
 
-## 🚀 Funcionalidades
+## 🚀 Funcionalidades Implementadas
 ✅ Criar contas bancárias com titular e saldo inicial  
 ✅ Realizar depósitos  
 ✅ Realizar saques com validação de saldo  
 ✅ Consultar saldo da conta  
-✅ Armazenar os dados das contas em JSON para persistência  
-✅ Interface de menu interativa no terminal  
+
+## 📌 Próximos Passos
+🔹 Implementar a **persistência de dados** com JSON  
+🔹 Criar um **menu interativo** no terminal  
+🔹 Melhorar a **exibição de informações**  
+🔹 Implementar **tratamento de erros** para evitar entradas inválidas  
 
 ## 📌 Tecnologias Utilizadas
 - **Python 3**
 - **Programação Orientada a Objetos (POO)**
-- **Manipulação de arquivos JSON** para armazenar as contas
+- **Manipulação de arquivos JSON** (em andamento)
 - **Estruturas de repetição e condicionais** para controle de fluxo
 
 ---
@@ -24,7 +29,6 @@ Um **Sistema de Contas Bancárias** simples e funcional desenvolvido em **Python
 ```
 📦 Sistema-de-Contas-Bancarias
  ├── 📜 main.py          # Arquivo principal do programa
- ├── 📜 contas.json      # Armazena os dados das contas (criado automaticamente)
  ├── 📜 README.md        # Documentação do projeto
 ```
 
@@ -46,7 +50,7 @@ python --version  # Ou python3 --version
 
 1️⃣ **Clone o repositório:**
 ```sh
-git clone https://github.com/Thiago-c-souza/Sistema-de-Contas-Bancarias..git
+git clone https://github.com/Thiago-c-souza/Sistema-de-Contas-Bancarias.git
 ```
 
 2️⃣ **Acesse a pasta do projeto:**
@@ -59,7 +63,7 @@ cd Sistema-de-Contas-Bancarias
 python main.py
 ```
 
-📌 **Obs:** O arquivo `contas.json` será criado automaticamente ao executar o programa pela primeira vez.
+📌 **Obs:** A funcionalidade de persistência de dados em JSON ainda será implementada. No momento, os dados das contas não são salvos após o encerramento do programa.
 
 ---
 
@@ -79,7 +83,7 @@ Quando o programa for executado, o seguinte menu aparecerá:
 - **2:** Digitar o valor e depositar na conta.
 - **3:** Digitar o valor e sacar da conta (se houver saldo suficiente).
 - **4:** Exibir o saldo atual da conta.
-- **5:** Salvar as contas e encerrar o programa.
+- **5:** Encerrar o programa.
 
 ---
 
@@ -111,8 +115,9 @@ Se quiser contribuir para o projeto:
 2. **Crie uma branch** com a nova funcionalidade: `git checkout -b minha-feature`
 3. **Faça um commit das alterações**: `git commit -m 'Adicionando nova feature'`
 4. **Envie para o GitHub**: `git push origin minha-feature`
-5. **Abra um Pull Request**
+5. **Abra um Pull Request`
 
 ---
 
 📌 **Criado por Thiago Caixeta de Souza** 🚀
+
