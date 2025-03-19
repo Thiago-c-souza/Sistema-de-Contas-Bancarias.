@@ -1,4 +1,4 @@
-
+import json
 
 class ContaBancaria:
     def __init__(self, titular, saldo = 0):
@@ -22,9 +22,23 @@ class ContaBancaria:
     def exibir_saldo(self):
         print(f"💰 Saldo atual: R$ {self.saldo:.2f}")
 
-Teste = ContaBancaria('Thiago')
+def salvar_contas(contas):
+    with open("contas.json", "w") as arquivo:
+        json.dump([conta.__dict__ for conta in contas], arquivo, indent=4)
 
-Teste.exibir_saldo()
-        
+def carregar_contas():
+    try:
+        with open("contas.json", "r") as arquivo:
+            contas_dados = json.load(arquivo)
+            return [ContaBancaria(**conta) for conta in contas_dados]
+    except FileNotFoundError:
+        return []
+    
+contas = carregar_contas()
+
+nova_conta = ContaBancaria("Thiago", 100)
+contas.append(nova_conta)
+salvar_contas(contas)
+
 
 
